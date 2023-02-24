@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Apple",
+        "logo": {
+            "image": "brands/apple.webp",
+            "alternative": "logo"
+        }
+    },
+    {
+        "id": 2,
+        "title": "Samsung",
+        "logo": {
+            "image": "brands/samsung.webp",
+            "alternative": "logo"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Huawei",
+        "logo": {
+            "image": "brands/huawei.png",
+            "alternative": "logo"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Google",
+        "logo": {
+            "image": "brands/google.webp",
+            "alternative": "logo"
+        }
+    }
+]

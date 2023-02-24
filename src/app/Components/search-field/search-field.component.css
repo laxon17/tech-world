@@ -1,0 +1,29 @@
+.search__field {
+  padding-left: 1rem;
+  width: 50%;
+  height: 50px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  border: 2px solid grey;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search__field > input {
+  width: 95%;
+  border: 0;
+  outline: 0;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+}
+
+.search__field .search__icon {
+  width: 5%;
+  display: flex;
+  background-color: #3f51b5;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}

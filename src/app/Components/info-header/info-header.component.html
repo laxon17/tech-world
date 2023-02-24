@@ -1,0 +1,29 @@
+<mat-toolbar
+  color="primary"
+>
+  <div class="navigation__wrapper">
+    <a
+      routerLink="/"
+    >
+      TechWorld
+    </a>
+    <nav>
+      <a
+        *ngFor="let link of links"
+        [routerLink]="link.path"
+      >
+        {{ link.title }}
+      </a>
+    </nav>
+  </div>
+  <div>
+    <a routerLink="cart">
+      <mat-icon>shopping_cart</mat-icon>
+    </a>
+    <a
+      routerLink="favorites"
+    >
+      <mat-icon>favorite</mat-icon>
+    </a>
+  </div>
+</mat-toolbar>

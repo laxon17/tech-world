@@ -1,0 +1,11 @@
+<div class="search__field">
+  <input
+    [(ngModel)]="searchKeyword"
+    type="text"
+    placeholder="e.g. iPhone"
+    (keydown)="sendSearch()"
+  />
+  <div class="search__icon">
+    <mat-icon>search</mat-icon>
+  </div>
+</div>

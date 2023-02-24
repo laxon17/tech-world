@@ -1,0 +1,40 @@
+.mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+}
+
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__wrapper > a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 2rem;
+}
+
+.navigation__wrapper > nav {
+  display: flex;
+}
+
+.navigation__wrapper > nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navigation__wrapper > nav a:first-of-type {
+  margin-right: 12px;
+}
+
+.mat-icon {
+  cursor: pointer;
+  color: #fff;
+}
+
+.mat-icon:first-of-type {
+  margin-right: 16px;
+}

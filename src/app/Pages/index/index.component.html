@@ -1,0 +1,27 @@
+<app-search-field
+  (keywordChanged)="setKeyword($event)"
+/>
+
+<section class="index__page__container">
+  <div class="side__navigation">
+      <app-side-nav
+        (brandChanged)="setBrands($event)"
+        (categoryChanged)="setCategories($event)"
+        (sortOrderChanged)="setSortOrder($event)"
+        (discountChanged)="setDiscount($event)"
+      />
+  </div>
+  <div
+    class="devices__container"
+  >
+    <h4
+      *ngIf="! devices.length"
+    >
+      Sorry, no devices found. Come back later!
+    </h4>
+    <app-product-card
+      *ngFor="let device of devices"
+      [product]="device"
+    />
+  </div>
+</section>

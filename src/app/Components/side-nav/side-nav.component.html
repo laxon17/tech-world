@@ -1,0 +1,55 @@
+<div>
+  <h2>Filter devices</h2>
+  <mat-form-field appearance="fill" style="width: 100%; ">
+    <mat-label>Sort By</mat-label>
+    <mat-select
+      matNativeControl
+      ngch
+      (valueChange)="sendSortOrder($event)"
+    >
+      <mat-option value="def">Default</mat-option>
+      <mat-option value="pr-as">Price Ascending</mat-option>
+      <mat-option value="pr-de">Price Descending</mat-option>
+      <mat-option value="na-as">Name Ascending</mat-option>
+      <mat-option value="na-de">Name Descending</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <span
+    style="margin-right: 15px"
+  >
+    On discount:
+  </span>
+  <mat-slide-toggle
+    [(ngModel)]="isChecked"
+    (toggleChange)="sendDiscountChange($event)"
+  />
+
+  <h3>Brands</h3>
+  <mat-selection-list
+    #brands
+    (selectionChange)="sendSelectedBrands(brands.selectedOptions.selected)"
+  >
+    <mat-list-option
+      *ngFor="let brand of brandFilters"
+      [value]="brand.id"
+    >
+      {{ brand.title }}
+    </mat-list-option>
+  </mat-selection-list>
+
+  <mat-divider></mat-divider>
+
+  <h3>Categories</h3>
+  <mat-selection-list
+    #categories
+    (selectionChange)="sendSelectedCategories(categories.selectedOptions.selected)"
+  >
+    <mat-list-option
+      *ngFor="let category of categoryFilters"
+      [value]="category.id"
+    >
+      {{ category.title }}
+    </mat-list-option>
+  </mat-selection-list>
+</div>

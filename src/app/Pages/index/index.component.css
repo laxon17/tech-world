@@ -1,0 +1,24 @@
+.index__page__container {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+
+.side__navigation {
+  min-width: 300px;
+  padding: 1.5rem 1.25rem;
+  margin-right: 2rem;
+  border-radius: 20px;
+  background-color: rgb(243, 243, 243) !important;
+  border: 1px solid lightgrey;
+}
+
+.devices__container {
+  flex-wrap: wrap;
+  justify-content: start;
+  display: flex;
+}
+
+h4 {
+  font-weight: 400;
+}

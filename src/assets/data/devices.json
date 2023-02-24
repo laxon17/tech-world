@@ -1,0 +1,219 @@
+[
+    {
+        "id": 1,
+        "brand": 1,
+        "model": "iPhone 14 pro",
+        "categories": [
+            1, 4
+        ],
+        "code": "AP-2197601",
+        "prices": {
+            "value": 1200,
+            "discount": 5
+        },
+        "specs": {
+            "storage": 256,
+            "ram": 8,
+            "battery": 3100,
+            "display": 6.7,
+            "camera": 12,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/14-pro-max.jpg",
+            "alternative": "iPhone 14 image"
+        },
+        "colors_available": [
+            "grey", "black", "purple", "teal"
+        ],
+        "stock": 1
+    },
+    {
+        "id": 2,
+        "brand": 1,
+        "model": "iPhone 14 pro max",
+        "categories": [
+            1, 4
+        ],
+        "code": "AP-2197551201",
+        "prices": {
+            "value": 1200,
+            "discount": 8
+        },
+        "specs": {
+            "storage": 512,
+            "ram": 8,
+            "battery": 3100,
+            "display": 6.7,
+            "camera": 12,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/14-pro-max.jpg",
+            "alternative": "iPhone 14 image"
+        },
+        "colors_available": [
+            "grey", "black", "purple", "teal"
+        ],
+        "stock": 4
+    },
+    {
+        "id": 3,
+        "brand": 1,
+        "model": "iPhone 14",
+        "categories": [
+            1, 4
+        ],
+        "code": "AP-67712991",
+        "prices": {
+            "value": 1200,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 256,
+            "ram": 6,
+            "battery": 3100,
+            "display": 6.1,
+            "camera": 12,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/14-pro-max.jpg",
+            "alternative": "iPhone 14 image"
+        },
+        "colors_available": [
+            "grey", "black", "purple", "teal"
+        ],
+        "stock": 9
+    },
+    {
+        "id": 4,
+        "brand": 1,
+        "model": "iPhone 14 plus",
+        "categories": [
+            1, 4
+        ],
+        "code": "AP-2131761601",
+        "prices": {
+            "value": 1200,
+            "discount": 15
+        },
+        "specs": {
+            "storage": 1024,
+            "ram": 8,
+            "battery": 3300,
+            "display": 6.1,
+            "camera": 12,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/14-pro-max.jpg",
+            "alternative": "iPhone 14 image"
+        },
+        "colors_available": [
+            "grey", "black", "purple", "teal"
+        ],
+        "stock": 12
+    },
+    {
+        "id": 5,
+        "brand": 2,
+        "model": "Galaxy S22 Ultra",
+        "categories": [
+            1, 4
+        ],
+        "code": "SMG-112422197601",
+        "prices": {
+            "value": 1240,
+            "discount": 20
+        },
+        "specs": {
+            "storage": 512,
+            "ram": 8,
+            "battery": 5500,
+            "display": 6.7,
+            "camera": 48,
+            "system": "Android 14",
+            "simTray": true
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/s22ultra.jpg",
+            "alternative": "Galaxy S22 ultra image"
+        },
+        "colors_available": [
+            "white", "black", "violet"
+        ],
+        "stock": 7
+    },
+    {
+        "id": 6,
+        "brand": 3,
+        "model": "P50 Pro",
+        "categories": [
+            1, 4
+        ],
+        "code": "HW-9900018616",
+        "prices": {
+            "value": 900,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 256,
+            "ram": 6,
+            "battery": 4700,
+            "display": 6.5,
+            "camera": 24,
+            "system": "Android 13",
+            "simTray": true
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/p50pro.jpg",
+            "alternative": "P50 Pro image"
+        },
+        "colors_available": [
+            "white", "black", "gold", "pink", "silver"
+        ],
+        "stock": 11
+    },
+    {
+        "id": 7,
+        "brand": 1,
+        "model": "Airpods pro gen. 2",
+        "categories": [
+            2
+        ],
+        "code": "AP-00981821601",
+        "prices": {
+            "value": 400,
+            "discount": 10
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 4000,
+            "display": 0,
+            "camera": 0,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "preview": {
+            "image": "assets/img/airpods.jpg",
+            "alternative": "Airpopds pro gen.2 image"
+        },
+        "colors_available": [
+            "white"
+        ],
+        "stock": 12
+    }
+]

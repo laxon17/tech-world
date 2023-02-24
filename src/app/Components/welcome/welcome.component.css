@@ -1,0 +1,16 @@
+.welcome__wrapper {
+  position: relative;
+  height: 700px;
+  background: url('../../../assets/img/cover.jpg');
+  box-shadow: 0 5px 5px 1px lightgrey;
+}
+
+.welcome__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.534);
+  display: grid;
+  place-content: center;
+  color: #fff;
+  font-size: 3rem;
+}

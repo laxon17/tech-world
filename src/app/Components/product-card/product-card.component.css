@@ -1,0 +1,67 @@
+.example-card {
+  max-width: 425px;
+  margin-bottom: 35px;
+  margin-right: 21px;
+  box-shadow: 0 5px 5px 1px lightgrey;
+  position: relative;
+  overflow: hidden;
+  transition: 300ms;
+}
+
+.example-card:hover {
+  box-shadow: 0 5px 10px 3px lightgrey;
+}
+
+.discount__ribbon {
+  padding: .5rem 4rem;
+  background-color: #3f51b5;
+  color: #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  right: -50px;
+  top: 20px;
+  z-index: 1;
+}
+
+.card__body {
+  margin: 1rem 0;
+}
+
+.price__tag {
+  font-size: 20px;
+}
+
+.add__to__favorites {
+  position: absolute;
+  right: 25px;
+  bottom: 39%;
+  color: red;
+  cursor: pointer;
+}
+
+.add__to__favorites > .mat-icon {
+  font-size: 2rem;
+  overflow: visible;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+button:first-of-type {
+  margin-right: 10px;
+  padding: 10px;
+  padding-bottom: 11px;
+  background-color: white;
+  outline: none;
+  border: none;
+  color: #ff528c;
+  font-weight: 600;
+  transition: 300ms;
+}
+
+button:first-of-type:hover {
+  background-color: #ffedf3;
+}

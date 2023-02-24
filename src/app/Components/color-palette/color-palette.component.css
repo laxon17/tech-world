@@ -1,0 +1,13 @@
+.palette__wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 3px solid lightgrey;
+  margin-right: 5px;
+}

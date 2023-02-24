@@ -1,0 +1,200 @@
+.show__container {
+  width: 90%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 80px;
+}
+
+.title h1 {
+  font-weight: 400;
+}
+
+.phone__info {
+  display: flex;
+  display: space-between;
+  margin-bottom: 50px;
+}
+
+.phone__info img {
+  width: 600px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table thead {
+  border-bottom: 2px solid lightgrey;
+}
+
+table th {
+  font-weight: 400;
+  text-align: center;
+  padding: .5rem;
+}
+
+table td {
+  text-align: center;
+  padding: .5rem;
+  background-color: rgb(243, 243, 243);
+}
+
+.phone__info__misc {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.logo__container {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+.product__store__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone__info__misc b {
+  font-weight: 500;
+}
+
+.phone__info__misc span {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.logo__container img {
+  width: 100%;
+}
+
+.store__price {
+  color: grey;
+  position: absolute;
+  top: -25px;
+  font-size: 15px;
+}
+
+.price__wrapper {
+  padding: 0 !important;
+  border: 1px solid grey;
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__price {
+  margin-bottom: 0 !important;
+  position: relative;
+  display: grid;
+  place-content: center;
+  background-color: #3f51b5;
+  font-size: 2rem;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.main__price::before {
+  content: '';
+  position: absolute;
+  right: -100px;
+  top: 0;
+  border: 50px solid transparent;
+  border-color: transparent;
+  border-left-color: #3f51b5;
+}
+
+.savings__value {
+  margin-bottom: 0 !important;
+  font-size: 1.35rem;
+  padding: 1.5rem;
+  padding-left: 4rem;
+  display:grid;
+  place-content: center;
+}
+
+.savings__value b {
+  color: rgb(87, 87, 87);
+}
+
+.price__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery__wrapper {
+  flex: 1;
+  border: 1px solid lightgrey;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.delivery__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem .5rem;
+  border: 1px solid rgb(173, 173, 173);
+}
+
+.delivery__info h2 {
+  font-weight: 300;
+}
+
+.delivery__info .mat-icon {
+  color: rgb(87, 87, 87);
+  width: 75px;
+  height: 75px;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+}
+
+.product__options {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product__options button {
+  width: 45%;
+  border: none;
+  outline: none;
+  padding: .75rem 0;
+  cursor: pointer;
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.product__options button:first-of-type {
+  border: 1px solid #3f51b5;
+  background-color: #fff;
+  color: #3f51b5;
+}
+
+.product__options button:last-of-type {
+  background-color: #3f51b5;
+  color: #fff;
+}
+
+.product__options button:last-of-type:disabled {
+  background-color: lightgrey;
+  color: grey;
+}
+
+.price__calculation h3 {
+  font-weight: 400;
+}
+
+

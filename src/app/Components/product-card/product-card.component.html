@@ -1,0 +1,62 @@
+<mat-card
+  class="example-card"
+>
+  <mat-card-header>
+    <mat-card-title>{{ getTitle() }}</mat-card-title>
+    <mat-card-subtitle>{{ getBrand() }}</mat-card-subtitle>
+    <span
+      class="discount__ribbon"
+      *ngIf="product.prices.discount != 0"
+    >
+      {{ product.prices.discount }}% off
+    </span>
+  </mat-card-header>
+
+  <img
+    mat-card-image
+    [src]="product.preview.image"
+    [alt]="product.preview.alternative"
+  />
+
+  <mat-divider />
+
+  <mat-card-content>
+    <app-color-palette
+      [colors]="product.colors_available"
+    />
+  </mat-card-content>
+
+  <span class="add__to__favorites">
+    <mat-icon
+      [attr.data-productId]="product.id"
+      (click)="addToCollection($event, 'favorites')"
+    >favorite</mat-icon>
+  </span>
+  <mat-card-content
+    class="card__body"
+  >
+    <p>
+      {{ product.description.substring(0, 150) + '...' }}
+    </p>
+    <span
+      [innerHTML]="getPrice()"
+      class="price__tag"
+    ></span>
+  </mat-card-content>
+  <mat-card-actions>
+    <button
+      color="accent"
+      [attr.data-productId]="product.id"
+      (click)="addToCollection($event, 'cart')"
+    >
+      Add to cart
+    </button>
+    <button
+      mat-button color="accent"
+      [routerLink]="['/show/', product.id]"
+    >
+      VIEW MORE
+    </button>
+  </mat-card-actions>
+</mat-card>
+

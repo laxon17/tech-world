@@ -1,0 +1,124 @@
+<section class="show__container">
+  <div class="title">
+    <h1>{{ getTitle() }}</h1>
+    <span><b>Brand: </b>{{ brand.title }}</span>
+  </div>
+  <section class="phone__info">
+    <div>
+      <img [src]="product.preview.image" [alt]="product.preview.alternative" />
+    </div>
+    <div class="phone__info__misc">
+      <div
+        class="logo__container"
+      >
+        <img
+          [src]="'assets/img/' + brand.logo.image"
+          [alt]="brand.logo.alternative"
+        />
+      </div>
+      <div class="product__store__info">
+        <span><b>Serial number</b>: {{ product.code }}</span>
+        <span><b>In categories</b>: {{ getCategories() }}</span>
+        <span><b>Devices available</b>: {{ product.stock }}</span>
+      </div>
+      <div class="price__info">
+        <span class="store__price"><b>*Store price</b>: &euro; {{ getStorePrice() }}</span>
+        <div class="price__wrapper">
+          <span class="main__price"><b>*{{ getPrice() }}</b></span>
+          <span class="savings__value">Save: <b>{{ getSavingsValue() }}</b></span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="delivery__wrapper"
+    >
+        <div class="delivery__info">
+          <mat-icon>local_shipping</mat-icon>
+          <h2>DELIVERY WITHIN 2-4 DAYS</h2>
+        </div>
+        <div class="price__calculation">
+          <h3>This product {{ product.prices.discount ? 'has a discount: %' + product.prices.discount : 'is not on a discount!' }}</h3>
+          <span
+            *ngIf="product.prices.discount"
+          >* invoices that exceed &euro; 1000, will be delivered for free!</span>
+          <span
+            *ngIf="!product.prices.discount"
+          >
+            <a
+
+              routerLink="/contact"
+            >
+              Contact us
+            </a> and we will notify you about discounts!
+          </span>
+        </div>
+        <div class="product__options">
+          <button
+            [attr.data-productId]="product.id"
+            (click)="addToCollection($event, 'favorites')"
+          >
+            Add to favorites
+          </button>
+          <button
+            [attr.data-productId]="product.id"
+            (click)="addToCollection($event, 'cart')"
+            [disabled]="! product.stock"
+          >
+            Add to cart
+          </button>
+        </div>
+    </div>
+  </section>
+  <mat-tab-group
+    backgroundColor="primary"
+    color="accent"
+  >
+    <mat-tab
+      label="Description"
+    >
+      <br />
+      {{ product.description }}
+    </mat-tab>
+    <mat-tab label="Specifications">
+      <br />
+      <table>
+        <thead>
+          <tr>
+            <th>STORAGE(gb)</th>
+            <th>RAM MEMORY(gb)</th>
+            <th>BATTERY(mAh)</th>
+            <th>DISPLAY(in)</th>
+            <th>CAMERA SENSOR(mp)</th>
+            <th>SYSTEM/OS</th>
+            <th>SIM TRAY</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{ product.specs.storage || 'N/A' }}</td>
+            <td>{{ product.specs.ram || 'N/A' }}</td>
+            <td>{{ product.specs.battery || 'N/A' }}</td>
+            <td>{{ product.specs.display || 'N/A' }}</td>
+            <td>{{ product.specs.camera || 'N/A' }}</td>
+            <td>{{ product.specs.system }}</td>
+            <td>{{ product.specs.simTray ? 'Yes' : 'No' }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </mat-tab>
+    <mat-tab
+      label="Available colors"
+    >
+      <br />
+      Currently available:
+      <ul>
+        <li
+          *ngFor="let color of product.colors_available"
+        >
+          {{ color.substring(0,1).toUpperCase() + color.substring(1, color.length) }}
+        </li>
+      </ul>
+    </mat-tab>
+  </mat-tab-group>
+</section>
+
