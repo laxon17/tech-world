@@ -1,1 +1,37 @@
-<p>cart works!</p>
+<h1>Your cart</h1>
+
+<section class="cart__cards">
+  <span
+    *ngIf="!cartProducts.length"
+  >
+    Your cart is empty!
+  </span>
+  <app-fav-product
+    *ngFor="let product of cartProducts"
+    [product]="product"
+    [collection]="'cart'"
+    (itemRemoved)="removeFromCart($event)"
+  >
+    <mat-form-field class="example-full-width">
+      <mat-label>Quantity</mat-label>
+      <input
+        matInput
+        type="number"
+        class="quantity__change"
+        [attr.data-productId]="product.id"
+        [value]="product.quantity"
+        (change)="quantityChanged($event)"
+        (keyup)="quantityChanged($event)"
+      />
+    </mat-form-field>
+  </app-fav-product>
+</section>
+
+<mat-divider />
+
+<div
+  class="checkout__options"
+>
+  <span class="total__price">Total= &euro; {{ calculateTotal() }}</span>
+  <button mat-raised-button color="primary">Checkout</button>
+</div>

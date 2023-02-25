@@ -18,6 +18,7 @@ export interface DeviceInterface {
   model: String,
   categories: number[],
   code: String,
+  quantity?: number,
   prices: {
     value: number,
     discount: number | 0

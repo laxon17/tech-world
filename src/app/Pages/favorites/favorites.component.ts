@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DeviceInterface } from 'src/app/Interfaces';
 import { ProductTools } from 'src/app/ProductTools';
 
 @Component({
@@ -7,11 +8,13 @@ import { ProductTools } from 'src/app/ProductTools';
   styleUrls: ['./favorites.component.css']
 })
 export class FavoritesComponent {
-  protected favoriteProducts: [] = []
+  protected favoriteProducts: DeviceInterface[] = []
 
   ngOnInit() {
-    let ids = ProductTools.getCollection('favorites')
+    this.favoriteProducts = ProductTools.assignCollection('favorites')
+  }
 
-    console.log
+  removeFromFavorites(device: any) {
+    this.favoriteProducts = ProductTools.removeFromCollection(device[0].target.dataset.deviceid, device[1])
   }
 }

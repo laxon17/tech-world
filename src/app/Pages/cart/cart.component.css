@@ -1,0 +1,35 @@
+h1 {
+  margin-bottom: 40px;
+}
+
+.cart__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  column-gap: 3%;
+}
+
+.mat-mdc-form-field {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  right: 15px;
+}
+
+.mat-divider {
+  margin-top: 20px;
+}
+
+.checkout__options {
+  margin-top: 20px;
+  align-self: end;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.checkout__options span {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}

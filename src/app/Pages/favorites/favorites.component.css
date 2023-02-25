@@ -1,0 +1,10 @@
+h1 {
+  margin-bottom: 40px;
+}
+
+.favorite__cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  column-gap: 3%;
+}

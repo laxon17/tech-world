@@ -30,6 +30,7 @@ import {MatTableModule} from '@angular/material/table';
 import { FavoritesComponent } from './Pages/favorites/favorites.component';
 import { CartComponent } from './Pages/cart/cart.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { FavProductComponent } from './Components/fav-product/fav-product.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     ColorPaletteComponent,
     SearchFieldComponent,
     FavoritesComponent,
-    CartComponent
+    CartComponent,
+    FavProductComponent
   ],
   imports: [
     MatSnackBarModule,

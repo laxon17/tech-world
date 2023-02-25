@@ -1,1 +1,15 @@
-<p>favorites works!</p>
+<h1>Your favorites</h1>
+
+<section class="favorite__cards">
+  <span
+    *ngIf="!favoriteProducts.length"
+  >
+    Your favorites list is empty!
+  </span>
+  <app-fav-product
+    *ngFor="let product of favoriteProducts"
+    [product]="product"
+    [collection]="'favorites'"
+    (itemRemoved)="removeFromFavorites($event)"
+  />
+</section>

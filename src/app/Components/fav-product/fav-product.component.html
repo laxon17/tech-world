@@ -1,0 +1,32 @@
+<article
+  class="fav__product__wrapper"
+>
+  <div class="product__image">
+    <img
+      [src]="product.preview.image"
+      [alt]="product.preview.alternative"
+    >
+  </div>
+  <div class="product__description">
+    <img
+      [src]="'assets/img/' + brand.logo.image"
+      [alt]="brand.logo.alternative"
+      class="brand__logo"
+    />
+    <span><b>Brand</b>: {{ brand.title }}</span>
+    <span><b>Model</b>: {{ getTitle() }}</span>
+    <span><b>Price</b>: {{ getPrice() }}</span>
+  </div>
+  <div class="product__options">
+
+    <ng-content />
+
+    <mat-icon
+      class="delete__icon"
+      [attr.data-deviceId]="product.id"
+      (click)="removeFromCollection($event, collection)"
+    >
+      close
+    </mat-icon>
+  </div>
+</article>
