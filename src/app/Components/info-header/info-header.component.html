@@ -17,13 +17,19 @@
     </nav>
   </div>
   <div>
-    <a routerLink="cart">
+    <a
+      routerLink="cart"
+      class="nav__link"
+    >
       <mat-icon>shopping_cart</mat-icon>
+      <div class="counter cart__counter">{{ getCount('cart') }}</div>
     </a>
     <a
       routerLink="favorites"
+      class="nav__link"
     >
       <mat-icon>favorite</mat-icon>
+      <div class="counter fav__counter">{{ getCount('favorites') }}</div>
     </a>
   </div>
 </mat-toolbar>

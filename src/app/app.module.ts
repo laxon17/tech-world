@@ -31,7 +31,9 @@ import { FavoritesComponent } from './Pages/favorites/favorites.component';
 import { CartComponent } from './Pages/cart/cart.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FavProductComponent } from './Components/fav-product/fav-product.component';
-
+import { CheckoutComponent } from './Pages/checkout/checkout.component';
+import { AuthGuard } from './shared/auth.guard';
+import { PageLoaderComponent } from './Components/page-loader/page-loader.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,7 +51,9 @@ import { FavProductComponent } from './Components/fav-product/fav-product.compon
     SearchFieldComponent,
     FavoritesComponent,
     CartComponent,
-    FavProductComponent
+    FavProductComponent,
+    CheckoutComponent,
+    PageLoaderComponent
   ],
   imports: [
     MatSnackBarModule,
@@ -72,6 +76,7 @@ import { FavProductComponent } from './Components/fav-product/fav-product.compon
       { path: '', redirectTo: '/index', pathMatch: 'full' },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'checkout', component: CheckoutComponent, canActivate:[AuthGuard] },
       { path: 'show/:id', component: ShowComponent },
       { path: 'favorites', component: FavoritesComponent },
       { path: 'cart', component: CartComponent },

@@ -76,4 +76,12 @@ export class ProductTools {
 
       return this.assignCollection('cart')
     }
+
+    static emptyCart() {
+      localStorage.removeItem('cart')
+    }
+
+    static count(collection: string) {
+      return this.getCollection(collection).length
+    }
 }

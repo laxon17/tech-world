@@ -11,5 +11,13 @@
     [product]="product"
     [collection]="'favorites'"
     (itemRemoved)="removeFromFavorites($event)"
-  />
+  >
+    <button
+      [attr.data-productId]="product.id"
+      (click)="addToCollection($event, 'cart')"
+      [disabled]="! product.stock"
+    >
+      Add to cart
+    </button>
+  </app-fav-product>
 </section>

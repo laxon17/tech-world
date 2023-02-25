@@ -3,7 +3,7 @@
     [(ngModel)]="searchKeyword"
     type="text"
     placeholder="e.g. iPhone"
-    (keydown)="sendSearch()"
+    (keyup)="sendSearch()"
   />
   <div class="search__icon">
     <mat-icon>search</mat-icon>

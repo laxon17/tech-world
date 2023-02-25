@@ -8,3 +8,18 @@ h1 {
   grid-template-columns: repeat(2, 50%);
   column-gap: 3%;
 }
+
+button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 150px;
+  border: none;
+  outline: none;
+  padding: .75rem;
+  cursor: pointer;
+  font-size: .75rem;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3f51b5;
+}

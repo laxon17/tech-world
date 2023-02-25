@@ -1,0 +1,11 @@
+<div *ngIf="loading" class="loader__container">
+  <div *ngIf="!!message">
+    <div class="loader__message__container">{{ message }}</div>
+    <div
+      *ngIf="!!progressValue"
+      class="loader__progress__container"
+    >
+      <div class="progress__bar" [style.width]="progressValueStyle"></div>
+    </div>
+  </div>
+</div>

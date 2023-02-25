@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { DeviceInterface } from 'src/app/Interfaces';
 import { ProductTools } from 'src/app/ProductTools';
 
@@ -9,6 +10,8 @@ import { ProductTools } from 'src/app/ProductTools';
 })
 export class FavoritesComponent {
   protected favoriteProducts: DeviceInterface[] = []
+  
+  constructor( private _snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.favoriteProducts = ProductTools.assignCollection('favorites')
@@ -16,5 +19,19 @@ export class FavoritesComponent {
 
   removeFromFavorites(device: any) {
     this.favoriteProducts = ProductTools.removeFromCollection(device[0].target.dataset.deviceid, device[1])
+  }
+
+  addToCollection(product: any, collection: string) {
+    let response = ProductTools.addToCollection(collection, product.target.dataset.productid)
+
+    this.openSnackBar(response as string)
+  }
+
+  openSnackBar(message: string) {
+    this._snackBar.open(message, 'Close', {
+      horizontalPosition: 'start',
+      verticalPosition: 'bottom',
+      duration: 3000
+    });
   }
 }

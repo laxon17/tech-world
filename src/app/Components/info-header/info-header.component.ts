@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { ProductTools } from 'src/app/ProductTools';
 @Component({
   selector: 'app-info-header',
   templateUrl: './info-header.component.html',
@@ -13,5 +13,9 @@ export class InfoHeaderComponent {
       {path: '/about', title: 'About'},
       {path: '/contact', title: 'Contact us'},
     ];
+  }
+
+  getCount(collection: string) {
+    return ProductTools.count(collection)
   }
 }
