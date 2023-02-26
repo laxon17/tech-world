@@ -34,11 +34,21 @@
   *ngIf="cartProducts.length"
 >
   <span class="total__price">Total= &euro; {{ calculateTotal() }}</span>
-  <button
-    mat-raised-button
-    color="primary"
-    routerLink="/checkout"
-  >
-    Checkout
-  </button>
+  <div>
+    <button
+      mat-raised-button
+      color="primary"
+      style="margin-right: 10px"
+      (click)="emptyCart()"
+    >
+      Empty cart
+    </button>
+    <button
+      mat-raised-button
+      color="primary"
+      routerLink="/checkout"
+    >
+      Checkout
+    </button>
+  </div>
 </div>

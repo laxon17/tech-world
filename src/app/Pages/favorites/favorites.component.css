@@ -3,10 +3,17 @@ h1 {
 }
 
 .favorite__cards {
+  position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 50%);
   column-gap: 3%;
+}
+
+.empty__favorites {
+  position: absolute;
+  top: -60px;
+  right: 0;
 }
 
 button {

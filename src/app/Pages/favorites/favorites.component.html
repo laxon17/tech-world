@@ -1,6 +1,15 @@
 <h1>Your favorites</h1>
 
 <section class="favorite__cards">
+  <button
+    *ngIf="favoriteProducts.length"
+    mat-raised-button
+    color="primary"
+    class="empty__favorites"
+    (click)="emptyFavorites()"
+  >
+    Empty favorites
+  </button>
   <span
     *ngIf="!favoriteProducts.length"
   >

@@ -94,7 +94,11 @@ export class ShowComponent {
   }
 
   getTitle(): String {
-    return `${this.product.model} /  ${this.product.specs.ram + 'GB' ?? ''} ${this.getStorageUnit(this.product.specs.storage ?? 0)}`
+    if(this.product.specs.storage != 0) {
+      return `${this.product.model} /  ${this.product.specs.ram + 'GB' ?? ''} ${this.getStorageUnit(this.product.specs.storage ?? 0)}`
+    }
+
+    return `${this.product.model}`
   }
 
   getStorageUnit(capacity: Number): String {
@@ -117,6 +121,17 @@ export class ShowComponent {
 
   calculateDiscount(): Number {
     return this.product.prices.value - (this.product.prices.value * (this.product.prices.discount / 100))
+  }
+
+  exists(): boolean {
+    let exists = false
+    let currentId = this.id as unknown as number
+
+    for(let device of deviceData) {
+      if(device.id == currentId) exists = true
+    }
+    
+    return exists
   }
 
   addToCollection(favoriteButton: any, collection: string) {

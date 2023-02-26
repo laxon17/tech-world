@@ -1,0 +1,47 @@
+.about__container {
+  width: 90%;
+  margin: 150px auto;
+  padding: 0 100px;
+}
+
+.about__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.first__container {
+  margin: 100px auto;
+}
+
+p.intro__text {
+  text-align: center;
+    color: rgb(107, 107, 107);
+}
+
+.about__info img {
+  width: 150%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 3px rgb(95, 95, 95);
+}
+
+.about__info  p {
+  padding: 0 50px;
+  font-size: 1.3rem;
+  line-height: 20pt;
+  color: rgb(80, 80, 80);
+}
+
+.my-divider {
+  width: 5%;
+  margin: 20px auto;
+  height: 15px;
+  background-color: #003e8f;
+}
+
+.outro__text {
+  margin: 150px auto;
+  color: rgb(107, 107, 107);
+  text-align: center;
+}

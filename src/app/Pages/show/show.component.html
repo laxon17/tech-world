@@ -1,4 +1,7 @@
-<section class="show__container">
+<section
+  *ngIf="exists()"
+  class="show__container"
+>
   <div class="title">
     <h1>{{ getTitle() }}</h1>
     <span><b>Brand: </b>{{ brand.title }}</span>
@@ -122,3 +125,9 @@
   </mat-tab-group>
 </section>
 
+<p
+  *ngIf="!exists()"
+  style="color: grey"
+>
+  The device you are looking for, doesn't exist.
+</p>

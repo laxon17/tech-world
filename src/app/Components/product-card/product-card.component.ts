@@ -60,7 +60,11 @@ export class ProductCardComponent {
   }
 
   getTitle(): String {
-    return `${this.product.model} /  ${this.product.specs.ram + 'GB' ?? ''} ${this.getStorageUnit(this.product.specs.storage ?? 0)}`
+    if(this.product.specs.storage != 0) {
+      return `${this.product.model} /  ${this.product.specs.ram + 'GB' ?? ''} ${this.getStorageUnit(this.product.specs.storage ?? 0)}`
+    }
+
+    return `${this.product.model}`
   }
 
   getStorageUnit(capacity: Number): String {

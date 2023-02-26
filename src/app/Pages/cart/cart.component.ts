@@ -14,6 +14,12 @@ export class CartComponent {
     this.cartProducts = ProductTools.assignCollection('cart')
   }
 
+  emptyCart() {
+    ProductTools.emptyCollection('cart')
+
+    this.cartProducts = ProductTools.assignCollection('cart')
+  }
+
   removeFromCart(device: any) {
     this.cartProducts = ProductTools.removeFromCollection(device[0].target.dataset.deviceid, device[1])
   }

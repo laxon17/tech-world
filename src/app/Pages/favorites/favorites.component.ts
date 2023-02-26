@@ -10,10 +10,16 @@ import { ProductTools } from 'src/app/ProductTools';
 })
 export class FavoritesComponent {
   protected favoriteProducts: DeviceInterface[] = []
-  
+
   constructor( private _snackBar: MatSnackBar) { }
 
   ngOnInit() {
+    this.favoriteProducts = ProductTools.assignCollection('favorites')
+  }
+
+  emptyFavorites() {
+    ProductTools.emptyCollection('favorites')
+
     this.favoriteProducts = ProductTools.assignCollection('favorites')
   }
 
