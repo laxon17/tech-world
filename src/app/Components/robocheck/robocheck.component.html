@@ -1,0 +1,30 @@
+<div
+  class="flex__container"
+>
+  <span>
+    How much is {{ firstNumber }} + {{ lastNumber }} ?
+  </span>
+  <div>
+    <mat-form-field>
+      <input
+        matInput
+        [formControl]="resultControl"
+        [errorStateMatcher]="matcher"
+        type="number"
+        inputmode="numeric"
+        max="2"
+        (keyup)="checkResult($event)"
+      />
+    </mat-form-field>
+    <mat-error *ngIf="resultControl.hasError('pattern') && !resultControl.hasError('required')">
+      Result number not as expected. Try using only two digits.
+    </mat-error>
+    <mat-error *ngIf="resultControl.hasError('required')">
+      Result number is <strong>required</strong>
+    </mat-error>
+    <mat-error *ngIf="resultControl.hasError('result')">
+      Wrong answer. Try again.
+    </mat-error>
+  </div>
+</div>
+<p>Just to be sure in case of cross site forgery.</p>

@@ -1,1 +1,93 @@
-<p>checkout works!</p>
+<div
+  class="container"
+>
+  <h1>Please enter your card's details</h1>
+  <form
+    (submit)="checkForm()"
+  >
+    <mat-form-field class="input__field full-width">
+      <mat-label>Card holder's name</mat-label>
+      <input
+        matInput
+        [formControl]="nameFormControl"
+        [errorStateMatcher]="matcher"
+        type="text"
+        placeholder="e.g. John Doe"
+        class="quantity__change"
+      />
+      <mat-error *ngIf="nameFormControl.hasError('pattern') && !nameFormControl.hasError('required')">
+        Name must include capitals and space
+      </mat-error>
+      <mat-error *ngIf="nameFormControl.hasError('required')">
+        Name is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field class="input__field full-width">
+      <mat-label>Card number</mat-label>
+      <input
+        matInput
+        [formControl]="cardNumberControl"
+        [errorStateMatcher]="matcher"
+        type="text"
+        placeholder="####-####-####-####"
+        inputmode="numeric"
+        class="quantity__change"
+      />
+      <mat-error *ngIf="cardNumberControl.hasError('pattern') && !cardNumberControl.hasError('required')">
+        Card number is not as expected.
+      </mat-error>
+      <mat-error *ngIf="cardNumberControl.hasError('required')">
+        Card number is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+    <div class="flex__container">
+      <mat-form-field class="input__field half-width">
+        <mat-label>Expiry date</mat-label>
+        <input
+          matInput
+          [formControl]="expiryDateControl"
+          [errorStateMatcher]="matcher"
+          type="text"
+          inputmode="numeric"
+          placeholder="MM/YY"
+          class="quantity__change"
+        />
+        <mat-error *ngIf="expiryDateControl.hasError('pattern') && !expiryDateControl.hasError('required')">
+          Expiry date is not as expected.
+        </mat-error>
+        <mat-error *ngIf="expiryDateControl.hasError('required')">
+          Expiry date is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="input__field half-width">
+        <mat-label>CVV</mat-label>
+        <input
+          matInput
+          type="text"
+          [formControl]="cvvControl"
+          [errorStateMatcher]="matcher"
+          placeholder="###"
+          inputmode="numeric"
+          class="quantity__change"
+        />
+        <mat-error *ngIf="cvvControl.hasError('pattern') && !cvvControl.hasError('required')">
+          CVV must contain only 3 digits.
+        </mat-error>
+        <mat-error *ngIf="cvvControl.hasError('required')">
+          CVV is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <app-robocheck
+      (correctAnswer)="setAnswerTrue($event)"
+    />
+
+    <button
+      mat-button
+      type="submit"
+    >
+      PAY
+    </button>
+  </form>
+</div>

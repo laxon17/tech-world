@@ -1,0 +1,13 @@
+.flex__container {
+  display: flex;
+  align-items: center;
+}
+
+span {
+  margin-right: 20px;
+}
+
+p {
+  color: grey;
+  font-size: 13px;
+}

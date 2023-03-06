@@ -5,28 +5,55 @@
   allowfullscreen="false"
   referrerpolicy="no-referrer-when-downgrade"
   ></iframe>
-  <form>
+  <form
+    (submit)="checkForm()"
+  >
     <h3>Send us a message</h3>
     <div class="sender">
       <mat-form-field class="example-full-width">
         <mat-label>Name</mat-label>
         <input
           matInput
+          [formControl]="nameFormControl"
+          [errorStateMatcher]="matcher"
           type="text"
           class="quantity__change"
         />
+        <mat-error *ngIf="nameFormControl.hasError('pattern') && !nameFormControl.hasError('required')">
+          Name must include capitals and space
+        </mat-error>
+        <mat-error *ngIf="nameFormControl.hasError('required')">
+          Name is <strong>required</strong>
+        </mat-error>
       </mat-form-field>
       <mat-form-field class="example-full-width">
         <mat-label>Email</mat-label>
         <input
           matInput
           type="email"
+          [formControl]="emailFormControl"
+          [errorStateMatcher]="matcher"
           class="quantity__change"
         />
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address.
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          Email is <strong>required</strong>.
+        </mat-error>
       </mat-form-field>
     </div>
-    <textarea placeholder="Message"></textarea>
-    <button>Send</button>
+    <textarea
+      matInput
+      [(ngModel)]="messageBody"
+      name="messageBody"
+      placeholder="Message *"
+      (blur)="checkMessage()"
+    ></textarea>
+    <mat-error *ngIf="hasMessageError">
+      {{ messageError }}
+    </mat-error>
+    <button type="submit">Send</button>
   </form>
 </div>
 

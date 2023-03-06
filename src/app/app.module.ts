@@ -24,7 +24,7 @@ import { WelcomeComponent } from './Components/welcome/welcome.component';
 import { ColorPaletteComponent } from './Components/color-palette/color-palette.component';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { SearchFieldComponent } from './Components/search-field/search-field.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import { FavoritesComponent } from './Pages/favorites/favorites.component';
@@ -33,7 +33,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { FavProductComponent } from './Components/fav-product/fav-product.component';
 import { CheckoutComponent } from './Pages/checkout/checkout.component';
 import { AuthGuard } from './shared/auth.guard';
-import { PageLoaderComponent } from './Components/page-loader/page-loader.component'
+import { PageLoaderComponent } from './Components/page-loader/page-loader.component';
+import { RobocheckComponent } from './Components/robocheck/robocheck.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,9 +54,11 @@ import { PageLoaderComponent } from './Components/page-loader/page-loader.compon
     CartComponent,
     FavProductComponent,
     CheckoutComponent,
-    PageLoaderComponent
+    PageLoaderComponent,
+    RobocheckComponent
   ],
   imports: [
+    ReactiveFormsModule,
     MatSnackBarModule,
     MatTableModule,
     MatTabsModule,

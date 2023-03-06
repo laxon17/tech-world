@@ -47,6 +47,7 @@ textarea {
   border: 0;
   outline: 0;
   border-bottom: 1px solid grey;
+  font-family: Roboto;
 }
 
 .social__wrapper {
