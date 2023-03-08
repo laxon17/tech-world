@@ -12,11 +12,13 @@
     </span>
   </mat-card-header>
 
-  <img
-    mat-card-image
-    [src]="product.preview.image"
-    [alt]="product.preview.alternative"
-  />
+  <div class="image__container">
+    <img
+      mat-card-image
+      [src]="product.preview.image"
+      [alt]="product.preview.alternative"
+    />
+  </div>
 
   <mat-divider />
 
@@ -36,7 +38,7 @@
     class="card__body"
   >
     <p>
-      {{ product.description.substring(0, 150) + '...' }}
+      {{ product.description.substring(0, 120) + '...' }}
     </p>
     <span
       [innerHTML]="getPrice()"

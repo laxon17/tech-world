@@ -33,187 +33,466 @@
     {
         "id": 2,
         "brand": 1,
-        "model": "iPhone 14 pro max",
+        "model": "iPhone 13 pro",
         "categories": [
             1, 4
         ],
-        "code": "AP-2197551201",
+        "code": "AP-2577197601",
         "prices": {
-            "value": 1200,
-            "discount": 8
-        },
-        "specs": {
-            "storage": 512,
-            "ram": 8,
-            "battery": 3100,
-            "display": 6.7,
-            "camera": 12,
-            "system": "iOS 16.3",
-            "simTray": false
-        },
-        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
-        "preview": {
-            "image": "assets/img/14-pro-max.jpg",
-            "alternative": "iPhone 14 image"
-        },
-        "colors_available": [
-            "grey", "black", "purple", "teal"
-        ],
-        "stock": 4
-    },
-    {
-        "id": 3,
-        "brand": 1,
-        "model": "iPhone 14",
-        "categories": [
-            1, 4
-        ],
-        "code": "AP-67712991",
-        "prices": {
-            "value": 1200,
-            "discount": 0
+            "value": 750,
+            "discount": 5
         },
         "specs": {
             "storage": 256,
-            "ram": 6,
-            "battery": 3100,
-            "display": 6.1,
-            "camera": 12,
-            "system": "iOS 16.3",
-            "simTray": false
+            "ram": 4,
+            "battery": 2800,
+            "display": 5.7,
+            "camera": 14,
+            "system": "iOS 16.1",
+            "simTray": true
         },
-        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "description": "The main difference between the ‌iPhone 13‌ and ‌iPhone 13 Pro‌ is their rear camera setups. The ‌iPhone 13‌ has a dual 12MP camera system with Ultra Wide and Wide lenses. On the other hand, the ‌iPhone 13 Pro‌ has a triple camera setup that adds a Telephoto lens.Dec ",
         "preview": {
-            "image": "assets/img/14-pro-max.jpg",
-            "alternative": "iPhone 14 image"
+            "image": "assets/img/iphone13pro.png",
+            "alternative": "iPhone 13 image"
         },
         "colors_available": [
-            "grey", "black", "purple", "teal"
-        ],
-        "stock": 9
-    },
-    {
-        "id": 4,
-        "brand": 1,
-        "model": "iPhone 14 plus",
-        "categories": [
-            1, 4
-        ],
-        "code": "AP-2131761601",
-        "prices": {
-            "value": 1200,
-            "discount": 15
-        },
-        "specs": {
-            "storage": 1024,
-            "ram": 8,
-            "battery": 3300,
-            "display": 6.1,
-            "camera": 12,
-            "system": "iOS 16.3",
-            "simTray": false
-        },
-        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
-        "preview": {
-            "image": "assets/img/14-pro-max.jpg",
-            "alternative": "iPhone 14 image"
-        },
-        "colors_available": [
-            "grey", "black", "purple", "teal"
+            "pink", "black", "blue", "darkslategrey"
         ],
         "stock": 12
     },
     {
+        "id": 3,
+        "brand": 1,
+        "model": "Airpods Pro 2",
+        "categories": [
+            2
+        ],
+        "code": "AP-31316661",
+        "prices": {
+            "value": 300,
+            "discount": 5
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 3600,
+            "display": 0,
+            "camera": 0,
+            "system": "iOS 16.1",
+            "simTray": false
+        },
+        "description": "In the box are the AirPods Pro, a new charging case with a built-in speaker for Find My support and a lanyard loop, silicone ear tips in sizes ranging from XS to L, a Lightning to USB-C cable, and documentation. The new XS ear tips are already sold separately for $7.99 on Apple's online store",
+        "preview": {
+            "image": "assets/img/airpods.jpg",
+            "alternative": "Airpods pro 2 image"
+        },
+        "colors_available": [
+            "white"
+        ],
+        "stock": 6
+    },
+    {
+        "id": 4,
+        "brand": 1,
+        "model": "Watch 8",
+        "categories": [
+            1, 3
+        ],
+        "code": "AP-121316661",
+        "prices": {
+            "value": 420,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 256,
+            "ram": 2,
+            "battery": 3200,
+            "display": 1.85,
+            "camera": 0,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "Apple Watch Series 8 has an innovative new sensor that tracks your temperature while you sleep, so you can see changes over time. Cycle Tracking uses this data to provide a retrospective estimate of when you likely ovulated, which can be helpful for family planning.",
+        "preview": {
+            "image": "assets/img/applewatch.png",
+            "alternative": "Applewatch 8 image"
+        },
+        "colors_available": [
+            "black", "blue", "red"
+        ],
+        "stock": 2
+    },
+    {
         "id": 5,
+        "brand": 1,
+        "model": "Charging Brick",
+        "categories": [
+            5
+        ],
+        "code": "AP-221991661",
+        "prices": {
+            "value": 25,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 0,
+            "display": 0,
+            "camera": 0,
+            "system": "",
+            "simTray": false
+        },
+        "description": "The Apple 20W USB‑C Power Adapter offers fast, efficient charging at home, in the office, or on the go. Pair it with iPhone 8 or later for fast charging — 50 percent battery in around 35 minutes.¹ Or pair it with the iPad Pro and iPad Air for optimal charging performance.",
+        "preview": {
+            "image": "assets/img/chargeriphone.webp",
+            "alternative": "Charger image"
+        },
+        "colors_available": [
+            "white"
+        ],
+        "stock": 22
+    },
+    {
+        "id": 6,
+        "brand": 1,
+        "model": "Watch Ultra",
+        "categories": [
+            1, 3
+        ],
+        "code": "AP-55511661",
+        "prices": {
+            "value": 820,
+            "discount": 4
+        },
+        "specs": {
+            "storage": 512,
+            "ram": 4,
+            "battery": 4000,
+            "display": 2,
+            "camera": 5,
+            "system": "iOS 16.3",
+            "simTray": false
+        },
+        "description": "Meet the most rugged and capable Apple Watch ever. With a robust titanium case, precision dual-frequency GPS, up to 36 hours of battery life, 1 the freedom of cellular, 2 and three specialized bands made for athletes and adventurers of all kinds.",
+        "preview": {
+            "image": "assets/img/ultrawatch.png",
+            "alternative": "Ultra watch image"
+        },
+        "colors_available": [
+            "orange", "grey"
+        ],
+        "stock": 3
+    },
+    {
+        "id": 7,
+        "brand": 1,
+        "model": "Watch Charger",
+        "categories": [
+            5
+        ],
+        "code": "AP-55527788961",
+        "prices": {
+            "value": 20,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 0,
+            "display": 0,
+            "camera": 0,
+            "system": "",
+            "simTray": false
+        },
+        "description": "The Apple watch charging cable offers fast, efficient charging at home, in the office, or on the go. Pair with watch 4 or later for fast charging — 50 percent battery in around 35 minutes.",
+        "preview": {
+            "image": "assets/img/watcharger.jpg",
+            "alternative": "Apple watch charger image"
+        },
+        "colors_available": [
+            "white"
+        ],
+        "stock": 16
+    },
+    {
+        "id": 8,
         "brand": 2,
-        "model": "Galaxy S22 Ultra",
+        "model": "Galaxy S23 Ultra",
         "categories": [
             1, 4
         ],
-        "code": "SMG-112422197601",
+        "code": "SM-126222322",
         "prices": {
-            "value": 1240,
-            "discount": 20
+            "value": 1120,
+            "discount": 10
         },
         "specs": {
             "storage": 512,
             "ram": 8,
-            "battery": 5500,
+            "battery": 4600,
             "display": 6.7,
             "camera": 48,
-            "system": "Android 14",
+            "system": "Android 16",
             "simTray": true
         },
-        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "description": "Galaxy S23 Ultra offers the highest resolution yet on a Galaxy smartphone at 200MP, compared to S22 Ultra's 108MP",
         "preview": {
             "image": "assets/img/s22ultra.jpg",
-            "alternative": "Galaxy S22 ultra image"
+            "alternative": "S23 ultra image"
         },
         "colors_available": [
-            "white", "black", "violet"
+            "purple", "black"
         ],
-        "stock": 7
+        "stock": 5
     },
     {
-        "id": 6,
+        "id": 9,
+        "brand": 2,
+        "model": "Galaxy Buds 2 Pro",
+        "categories": [
+            2
+        ],
+        "code": "SM-166178431",
+        "prices": {
+            "value": 225,
+            "discount": 5
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 0,
+            "display": 0,
+            "camera": 0,
+            "system": "",
+            "simTray": false
+        },
+        "description": "Samsung Galaxy Buds2 Pro - The ultimate Hi-Fi sound now wirelessly. Crystal clear audio, seamless connectivity, and comfortable fit",
+        "preview": {
+            "image": "assets/img/galaxy-buds2-pro.jpg",
+            "alternative": "Galaxy buds pro 2 image"
+        },
+        "colors_available": [
+            "violet", "white", "black"
+        ],
+        "stock": 12
+    },
+    {
+        "id": 10,
+        "brand": 3,
+        "model": "Huawei Buds",
+        "categories": [
+            2
+        ],
+        "code": "HW-1255678431",
+        "prices": {
+            "value": 175,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 0,
+            "display": 0,
+            "camera": 0,
+            "system": "",
+            "simTray": false
+        },
+        "description": "Huawei Buds - The ultimate Hi-Fi sound now wirelessly. Crystal clear audio, seamless connectivity, and comfortable fit",
+        "preview": {
+            "image": "assets/img/huaweibuds.jpg",
+            "alternative": "Huawei buds image"
+        },
+        "colors_available": [
+            "blue", "white", "black"
+        ],
+        "stock": 9
+    },
+    {
+        "id": 11,
+        "brand": 3,
+        "model": "Mate X",
+        "categories": [
+            1, 4
+        ],
+        "code": "HW-7779078431",
+        "prices": {
+            "value": 1725,
+            "discount": 15
+        },
+        "specs": {
+            "storage": 512,
+            "ram": 6,
+            "battery": 4000,
+            "display": 8,
+            "camera": 42,
+            "system": "Android 15.7",
+            "simTray": true
+        },
+        "description": "Spread your wings with HUAWEI Mate Xs’ Falcon Wing Design. Adopting the unique Falcon Wing with an innovative hinge, HUAWEI Mate Xs presents groundbreaking technology with a remarkable visual sensation. Folded as a sleek smartphone, it fits perfectly in your pocket and palm.",
+        "preview": {
+            "image": "assets/img/matex.png",
+            "alternative": "Mate X image"
+        },
+        "colors_available": [
+            "black", "gold"
+        ],
+        "stock": 2
+    },
+    {
+        "id": 12,
         "brand": 3,
         "model": "P50 Pro",
         "categories": [
             1, 4
         ],
-        "code": "HW-9900018616",
+        "code": "HW-2442178431",
         "prices": {
-            "value": 900,
+            "value": 925,
             "discount": 0
         },
         "specs": {
             "storage": 256,
             "ram": 6,
-            "battery": 4700,
-            "display": 6.5,
-            "camera": 24,
-            "system": "Android 13",
+            "battery": 3600,
+            "display": 6.6,
+            "camera": 36,
+            "system": "Android 16",
             "simTray": true
         },
-        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "description": "Dual-Matrix Camera Design, 6.6 inch True-Chroma Display⁠, 120 Hz Screen Refresh Rate⁠2, IP68 Splash, Water, and Dust Resistance. The 6.6 inch screen⁠1 has been individually tuned to show you a true-to-life world.",
         "preview": {
             "image": "assets/img/p50pro.jpg",
-            "alternative": "P50 Pro image"
+            "alternative": "P50 pro image"
         },
         "colors_available": [
-            "white", "black", "gold", "pink", "silver"
+            "gold", "black"
         ],
-        "stock": 11
+        "stock": 1
     },
     {
-        "id": 7,
-        "brand": 1,
-        "model": "Airpods pro gen. 2",
+        "id": 13,
+        "brand": 4,
+        "model": "Pixel 6",
+        "categories": [
+            1, 4
+        ],
+        "code": "GG-33998015",
+        "prices": {
+            "value": 700,
+            "discount": 25
+        },
+        "specs": {
+            "storage": 1024,
+            "ram": 6,
+            "battery": 4200,
+            "display": 6.7,
+            "camera": 64,
+            "system": "Android 16.1",
+            "simTray": true
+        },
+        "description": "The Google Pixel 6 Pro is the best phone Google has ever made, with an incredible camera, amazing screen and a design that we can't get enough of. If you want a pure Android experience and the best tech Google has to offer, then this is where it's at.",
+        "preview": {
+            "image": "assets/img/pixel6.jpg",
+            "alternative": "Google pixel 6 image"
+        },
+        "colors_available": [
+          "black", "white", "grey"
+        ],
+        "stock": 3
+    },
+    {
+        "id": 14,
+        "brand": 4,
+        "model": "Pixel Buds",
         "categories": [
             2
         ],
-        "code": "AP-00981821601",
+        "code": "GG-514613161900",
         "prices": {
-            "value": 400,
-            "discount": 10
+            "value": 125,
+            "discount": 15
         },
         "specs": {
             "storage": 0,
             "ram": 0,
-            "battery": 4000,
+            "battery": 0,
             "display": 0,
             "camera": 0,
-            "system": "iOS 16.3",
+            "system": "",
             "simTray": false
         },
-        "description": "The iPhone 14 measures in at 5.78 inches tall (146.7mm), 2.82 inches wide (71.5mm), and 0.31 inches deep (7.80mm), identical to the iPhone 13 except for the thickness.",
+        "description": "Premium, immersive sound that adapts to you. Active Noise Cancellation with Silent Seal. Up to 31 hours of total listening time. Just say “Hey Google” for a little help. Transparency mode helps you hear what’s outside. Wireless charging.",
         "preview": {
-            "image": "assets/img/airpods.jpg",
-            "alternative": "Airpopds pro gen.2 image"
+            "image": "assets/img/pixelbuds.jpg",
+            "alternative": "Pixel buds image"
         },
         "colors_available": [
             "white"
         ],
-        "stock": 12
+        "stock": 8
+    },
+    {
+        "id": 15,
+        "brand": 2,
+        "model": "Charging Brick",
+        "categories": [
+            5
+        ],
+        "code": "SM-224112559",
+        "prices": {
+            "value": 35,
+            "discount": 0
+        },
+        "specs": {
+            "storage": 0,
+            "ram": 0,
+            "battery": 0,
+            "display": 0,
+            "camera": 0,
+            "system": "",
+            "simTray": false
+        },
+        "description": "The Samsung 20W USB‑C Power Adapter offers fast, efficient charging at home, in the office, or on the go. Pair it with phones or tablets, models 8 and above for fast charging — 50 percent battery in around 35 minutes.",
+        "preview": {
+            "image": "assets/img/samsungcharger.avif",
+            "alternative": "Samsung charger brick image"
+        },
+        "colors_available": [
+            "black"
+        ],
+        "stock": 61
+    },
+    {
+        "id": 16,
+        "brand": 2,
+        "model": "Watch Pro 46mm",
+        "categories": [
+            1, 3
+        ],
+        "code": "SM-166770059",
+        "prices": {
+            "value": 335,
+            "discount": 5
+        },
+        "specs": {
+            "storage": 128,
+            "ram": 3,
+            "battery": 4500,
+            "display": 1.81,
+            "camera": 0,
+            "system": "Android 16",
+            "simTray": false
+        },
+        "description": "The Galaxy Watch Pro comes with Google's Wear OS powered by Samsung, so that means you get Google Maps, Google Assistant, Google Pay, Messages, Keep Notes, and more. In addition, Samsung Pay, Samsung Messages, Samsung Health, Bixby, and other Samsung apps are provided. It is a Samsung Galaxy Watch after all.",
+        "preview": {
+            "image": "assets/img/galaxy-watch.webp",
+            "alternative": "Samsung Galaxy Watch pro image"
+        },
+        "colors_available": [
+            "black", "grey"
+        ],
+        "stock": 11
     }
 ]
